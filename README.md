@@ -44,6 +44,23 @@ Filebeat следует сконфигурировать для отправки
 - docker-compose манифест (если вы не использовали директорию help);
 - ваши yml-конфигурации для стека (если вы не использовали директорию help).
 
+## Решение 1
+Пользуясь информацией из мануалов написал docker-compose файл, который запускает Elasticsearch кластер, Filebeat, Logstash и Kibana
+
+<img width="914" alt="Up containers" src="https://github.com/user-attachments/assets/442fd21c-4b18-41c1-862e-bdd2a01d2f97">
+
+Интерфейс kibana
+
+<img width="904" alt="Kibana" src="https://github.com/user-attachments/assets/a75ac92d-ef26-4e58-8365-30577037bb71">
+
+<img width="932" alt="Status Elastic" src="https://github.com/user-attachments/assets/7f01e910-e297-45d7-b6a1-1a29f004b41c">
+
+Docker-compose манифест
+[ссылка](https://github.com/sash3939/Monitoring-ELK/blob/main/docker-compose.yml)
+
+Yml-конфигурации для стека
+[ссылка](https://github.com/sash3939/Monitoring-ELK/tree/main)
+
 ## Задание 2
 
 Перейдите в меню [создания index-patterns  в kibana](http://localhost:5601/app/management/kibana/indexPatterns/create) и создайте несколько index-patterns из имеющихся.
@@ -52,7 +69,13 @@ Filebeat следует сконфигурировать для отправки
 
 В манифесте директории help также приведенно dummy-приложение, которое генерирует рандомные события в stdout-контейнера.
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
- 
+
+## Решение 2
+
+<img width="892" alt="Index Logstash" src="https://github.com/user-attachments/assets/cbb3e4a9-59e1-4bf6-85f3-ea59451159c4">
+
+<img width="932" alt="Logs" src="https://github.com/user-attachments/assets/e3891f2b-498d-4566-9cb5-7e041f78616b">
+
 ---
 
 ### Как оформить решение задания
