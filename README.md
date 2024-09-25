@@ -49,6 +49,11 @@ Filebeat следует сконфигурировать для отправки
 
 <img width="914" alt="Up containers" src="https://github.com/user-attachments/assets/442fd21c-4b18-41c1-862e-bdd2a01d2f97">
 
+Добавил значение vm.max_map_count=262144 в /etc/sysctl.conf, только после этого стартует Kibana и контейнер штатно работает:
+
+<img width="204" alt="Sysctl" src="https://github.com/user-attachments/assets/73f80a5c-4ffa-4bc7-a621-9c7e9b516be9">
+
+
 Интерфейс kibana
 
 <img width="904" alt="Kibana" src="https://github.com/user-attachments/assets/a75ac92d-ef26-4e58-8365-30577037bb71">
